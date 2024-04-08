@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="BarcelonaApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="database_content.json"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body ng-controller="BarcelonaController">
+    <header>
+        <h1 id="title1">{{title}}</h1>
+
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">What To See</a></li>
+            <li><a href="">Gallery</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </header>
+
+    <div class="cards">
+        <div class="col" ng-repeat="b in barcelona">
+            <div class="card">
+                <h2>{{b.title}}</h2>
+                <img src="img/{{b.img}}.jpg" alt="{{b.img}}">
+                <h6>{{b.description}}</h6>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+
+    </footer>
+    <script src="angular.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

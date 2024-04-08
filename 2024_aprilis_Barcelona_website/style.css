@@ -1,0 +1,41 @@
+header{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#title1{
+    font-size: 50px;
+    background-image: url(img/background-pattern.jpg);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+ul{
+    display: flex;
+    flex-flow: row;
+}
+
+li{
+    list-style: none;
+    margin: 15px;
+}
+
+a{
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #2282ff;
+}
+
+.card{
+    width: auto;
+    margin: 0.5em;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
